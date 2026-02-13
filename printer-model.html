@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="/fav.png">
+<title>Printer Setup Assistance</title>
+</head>
+
+<body style="margin:0;font-family:Arial,Helvetica,sans-serif;">
+
+<!-- ================= HEADER ================= -->
+<header style="background:#ffffff;border-bottom:1px solid #e5e7eb;">
+  
+  <div style="
+      max-width:1200px;
+      margin:auto;
+      padding:16px 20px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+  ">
+    
+    <!-- CENTER NAV -->
+    <nav style="
+        display:flex;
+        gap:60px;
+        flex-wrap:wrap;
+        justify-content:center;
+        font-weight:600;
+    ">
+      <a href="/" style="text-decoration:none;color:#111827;font-size:16px;">Home</a>
+      <a   style="text-decoration:none;color:#111827;font-size:16px;">Inkjet</a>
+      <a   style="text-decoration:none;color:#111827;font-size:16px;">Laser</a>
+      <a   style="text-decoration:none;color:#111827;font-size:16px;">Envy</a>
+    </nav>
+
+  </div>
+
+</header>
+
+<section style="
+  position:relative;
+  background:url('/img/bnr1.png') center/cover no-repeat;
+  padding:45px 20px;
+  font-family:Arial,Helvetica,sans-serif;
+">
+
+  <div style="
+    max-width:1150px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+    flex-wrap:wrap;
+  ">
+
+    <!-- LEFT -->
+    <div style="flex:1;min-width:320px;color:#ffffff;">
+
+      <h1 style="
+        font-size:38px;
+        font-weight:700;
+        margin-bottom:14px;
+        line-height:1.2;
+      ">
+        Enter Your Printer Model Here!
+      </h1>
+
+      <p style="
+        font-size:17px;
+        margin-bottom:22px;
+        max-width:560px;
+        opacity:.95;
+      ">
+        Enter your product name or model number to quickly find the correct drivers.
+      </p>
+
+      <!-- SEARCH -->
+      <div style="max-width:600px;">
+
+        <div style="
+          display:flex;
+          background:#ffffff;
+          border-radius:8px;
+          overflow:hidden;
+          box-shadow:0 6px 20px rgba(0,0,0,.25);
+        ">
+          <input 
+            id="printerSearch"
+            type="text"
+            placeholder="Example: OfficeJet Pro 9015"
+            style="
+              flex:1;
+              padding:14px 18px;
+              border:none;
+              outline:none;
+              font-size:15px;
+              color:#000;
+            "
+          >
+
+          <button onclick="goSearch()" style="
+            background:#2f9ad6;
+            color:#fff;
+            border:none;
+            padding:0 26px;
+            font-size:15px;
+            font-weight:600;
+            cursor:pointer;
+          ">
+            Proceed
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div style="flex:1;text-align:right;min-width:280px;">
+      <img src="img/printer-devices-hero.png" 
+           alt="Printer"
+           style="max-width:100%;width:340px;">
+    </div>
+
+  </div>
+
+  <!-- MOBILE FIX -->
+  <style>
+  @media(max-width:992px){
+    section h1{
+      font-size:30px !important;
+      text-align:left;
+    }
+  }
+
+  @media(max-width:768px){
+    section{
+      padding:40px 18px !important;
+    }
+    section div[style*="text-align:right"]{
+      text-align:center !important;
+      margin-top:25px;
+    }
+  }
+  </style>
+
+</section>
+
+<script>
+
+/* ===================== REDIRECT ===================== */
+function goSearch(){
+  let value = document.getElementById("printerSearch").value.trim();
+  if(value !== ""){
+    window.location.href = "support.html?model=" + encodeURIComponent(value);
+  }
+}
+
+/* ===================== ENTER KEY ===================== */
+document.getElementById("printerSearch").addEventListener("keypress", function(e){
+  if(e.key === "Enter"){
+    goSearch();
+  }
+});
+
+</script>
+
+
+<section style="
+  background:#f5f7fa;
+  padding:70px 20px 50px;
+  text-align:center;
+  font-family:Arial,Helvetica,sans-serif;
+">
+
+  <div style="
+    max-width:900px;
+    margin:auto;
+  ">
+
+    <h2 style="
+      font-size:28px;
+      font-weight:500;
+      color:#1f2937;
+      margin-bottom:18px;
+      line-height:1.5;
+    ">
+      Set up your printer on each computer or mobile device you plan to use
+    </h2>
+
+    <p style="
+      font-size:18px;
+      color:#4b5563;
+      margin-bottom:30px;
+    ">
+      Need help setting up your printer?
+      <span style="
+        color:#4b5563;
+        font-weight:600;
+        text-decoration:none;
+      ">
+        Visit our Support Center.
+      </span>
+    </p>
+
+    <!-- NOTE -->
+    <p style="
+      font-size:14px;
+      color:#6b7280;
+      margin-top:20px;
+      line-height:1.6;
+    ">
+      <strong>Note:</strong> We are an independent service provider and are not affiliated with, endorsed by, or officially connected with any brands such as HP or other manufacturers. All brand names and trademarks are used strictly for identification purposes only.
+    </p>
+
+  </div>
+
+</section>
+
+
+<script>
+function openJivoChat() {
+  if (typeof jivo_api !== "undefined") {
+    jivo_api.open();
+  }
+}
+</script>
+
+
+
+<!-- BOTTOM FOOTER STRIP -->
+<footer style="
+  background:#2f9ad6;
+  padding:18px 20px;
+  font-family:Arial, Helvetica, sans-serif;
+">
+
+  <div style="
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:10px;
+    color:#ffffff;
+    font-size:14px;
+  ">
+
+    <!-- LEFT TEXT -->
+    <div style="
+      flex:1;
+      min-width:250px;
+    ">
+      We are independent service provider and not affiliated with, endorsed by, or sponsored by any brand or manufacturer.
+    </div>
+
+    <!-- RIGHT COPYRIGHT -->
+    <div style="
+      white-space:nowrap;
+      font-weight:500;
+    ">
+      Copyright © 2026 Print Tech Pro
+    </div>
+
+  </div>
+
+</footer>
+
+
+<!-- ================= JIVO CHAT FUNCTION ================= -->
+<script>
+function openJivoChat(){
+  if (typeof jivo_api !== "undefined") {
+      jivo_api.open();
+  }
+}
+</script>
+
+</body>
+</html>

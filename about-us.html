@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Printer Setup | Live Assistance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="/fav.png">
+</head>
+
+<body style="margin:0;font-family:Arial,Helvetica,sans-serif;background:#ffffff;">
+
+<header style="background:#ffffff;border-bottom:1px solid #e5e7eb;">
+  <div class="header-wrap">
+    <a href="index.html" style="text-decoration:none;">
+  <div class="logo">Print Tech Pro</div>
+</a>
+
+    <input type="search" placeholder="Type and Search..." class="search-input">
+
+    <button class="signin-btn">Sign In</button>
+  </div>
+</header>
+
+<nav class="top-menu">
+  <a >Printer Offline</a>
+  <a >Printer Setup</a>
+  <a  >Scanner Setup</a>
+  <a  >Support Home</a>
+  <a  >Ink Cartridge Issue</a>
+  <a  >Diagnostics</a>
+  <a  >Business</a>
+</nav>
+<style>
+*{box-sizing:border-box}
+
+/* HEADER */
+.header-wrap{
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  gap:18px;
+  padding:10px 16px; /* 👈 patla header */
+}
+
+.logo{
+  font-size:22px;
+  font-weight:800;
+  color:#0b1127;
+}
+
+/* SEARCH */
+.search-input{
+  flex:1;    /* 👈 IMPORTANT: width control */
+  padding:10px 14px;
+  border:1px solid #d1d5db;
+  border-radius:10px;
+  font-size:15px;
+}
+
+/* SIGN IN */
+.signin-btn{
+  background:#111827;
+  color:#fff;
+  border:none;
+  padding:10px 16px;
+  border-radius:8px;
+  font-weight:600;
+}
+
+/* MENU */
+.top-menu{
+  background:#2f9ad6;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:26px;
+  padding:10px 12px;   /* 👈 patla blue bar */
+}
+
+.top-menu a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  font-size:15px;
+}
+</style>
+
+
+
+<section class="about-section">
+  <div class="about-container">
+
+    <!-- IMAGE SIDE -->
+    <div class="about-image">
+      <img src="img/about-us.png" alt="About Print Tech Pro">
+    </div>
+
+    <!-- CONTENT SIDE -->
+    <div class="about-content">
+      <h2>Who We Are</h2>
+
+      <p>
+        <strong>Print Tech Pro</strong> is an independent technology support platform
+        dedicated to helping users resolve printer-related challenges with confidence
+        and clarity. Our team specializes in troubleshooting, setup guidance,
+        connectivity assistance, and general printer optimization across a wide range
+        of brands and models.
+      </p>
+
+      <p>
+        We understand that printers are essential tools for homes and businesses alike,
+        yet technical issues, driver confusion, wireless connectivity problems, and
+        setup errors often stand in the way of productivity. That’s where Print Tech Pro
+        steps in — offering reliable, easy-to-understand assistance without
+        manufacturer bias.
+      </p>
+
+      <p>
+        Our approach is rooted in transparency, technical accuracy, and user education.
+        We do not sell hardware, host drivers, or represent any printer manufacturer.
+        Instead, we focus on guiding users toward official resources and proven
+        solutions, empowering them to make informed decisions.
+      </p>
+    </div>
+
+  </div>
+</section>
+<style>
+.about-section{
+  background:#ffffff;
+  padding:80px 16px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.about-container{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1fr 1.2fr;
+  gap:60px;
+  align-items:center;
+}
+
+/* IMAGE */
+.about-image{
+  background:#f4f7fb;
+  padding:20px;
+  border-radius:22px;
+  box-shadow:0 20px 40px rgba(0,0,0,0.08);
+}
+.about-image img{
+  width:100%;
+  height:auto;
+  border-radius:16px;
+  display:block;
+}
+
+/* CONTENT */
+.about-content h2{
+  font-size:36px;
+  color:#0d6efd;
+  margin-bottom:20px;
+}
+
+.about-content p{
+  font-size:16px;
+  line-height:1.8;
+  color:#374151;
+  margin-bottom:16px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .about-container{
+    grid-template-columns:1fr;
+    gap:40px;
+  }
+  .about-content h2{
+    font-size:30px;
+  }
+}
+
+@media(max-width:600px){
+  .about-section{
+    padding:60px 14px;
+  }
+  .about-content h2{
+    font-size:26px;
+  }
+  .about-content p{
+    font-size:15px;
+  }
+}
+</style>
+
+<section class="mv-section">
+  <h2 class="mv-title">Our Mission & Values</h2>
+
+  <div class="mv-grid">
+
+    <div class="mv-card">
+      <div class="mv-icon">🎯</div>
+      <h3>Our Mission</h3>
+      <p>
+        To simplify printer technology by providing accurate, independent guidance
+        that helps users solve problems quickly and efficiently.
+      </p>
+    </div>
+
+    <div class="mv-card">
+      <div class="mv-icon">🤝</div>
+      <h3>Integrity</h3>
+      <p>
+        We operate with complete independence and honesty, ensuring that our
+        recommendations are unbiased and always in the best interest of the user.
+      </p>
+    </div>
+
+    <div class="mv-card">
+      <div class="mv-icon">💡</div>
+      <h3>Expertise</h3>
+      <p>
+        Our team continuously researches printer technologies, common errors,
+        and evolving systems to deliver practical, up-to-date solutions.
+      </p>
+    </div>
+
+    <div class="mv-card">
+      <div class="mv-icon">👥</div>
+      <h3>User-Centric Focus</h3>
+      <p>
+        Every guide, article, and support recommendation is designed with the end
+        user in mind — clear, actionable, and easy to follow.
+      </p>
+    </div>
+
+    <div class="mv-card">
+      <div class="mv-icon">🔍</div>
+      <h3>Transparency</h3>
+      <p>
+        We do not sell hardware or host drivers. Our guidance is purely
+        informational and focused on helping users make informed decisions.
+      </p>
+    </div>
+
+    <div class="mv-card">
+      <div class="mv-icon">⚙️</div>
+      <h3>Reliability</h3>
+      <p>
+        We focus on proven methods and official resources to ensure dependable
+        outcomes for home and business users.
+      </p>
+    </div>
+
+  </div>
+</section>
+<style>
+.mv-section{
+  padding:50px 16px 70px; /* 🔥 upar ka space kam */
+  background:linear-gradient(180deg,#f8fbff,#ffffff);
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.mv-title{
+  text-align:center;
+  font-size:34px;
+  color:#0d6efd;
+  margin-bottom:40px;
+}
+
+.mv-grid{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:28px;
+}
+
+.mv-card{
+  background:#ffffff;
+  border-radius:18px;
+  padding:34px 26px;
+  text-align:center;
+  box-shadow:0 12px 30px rgba(0,0,0,0.08);
+  transition:all .25s ease;
+}
+
+.mv-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 18px 45px rgba(0,0,0,0.12);
+}
+
+.mv-icon{
+  font-size:36px;
+  margin-bottom:16px;
+}
+
+.mv-card h3{
+  font-size:19px;
+  margin-bottom:12px;
+  color:#111827;
+}
+
+.mv-card p{
+  font-size:15px;
+  line-height:1.65;
+  color:#4b5563;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:1024px){
+  .mv-grid{
+    grid-template-columns:repeat(2,1fr); /* tablet 2-2-2 */
+  }
+}
+
+@media(max-width:600px){
+  .mv-title{
+    font-size:26px;
+    margin-bottom:30px;
+  }
+  .mv-grid{
+    grid-template-columns:1fr; /* mobile single column */
+  }
+  .mv-card{
+    padding:28px 22px;
+  }
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+<!-- ================= FOOTER NOTE ================= -->
+<section style="padding:30px 20px;text-align:center;background:#f9fafb;">
+  <p style="font-size:13px;color:#555;">
+    Note: Print Tech Pro operates as an independent third-party assistance provider and
+    is not affiliated with any printer manufacturers.
+  </p>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer style="
+  background:#3498db;
+  color:#ffffff;
+  font-family:Arial,Helvetica,sans-serif;
+  width:100%;
+">
+
+  <!-- TOP AREA -->
+  <div style="
+    max-width:1200px;
+    margin:auto;
+    padding:50px 20px 40px;
+    display:flex;
+    gap:50px;
+  ">
+
+    <!-- LEFT LINKS (SMALL WIDTH) -->
+    <div style="width:220px;">
+      <h3 style="
+        font-size:22px;
+        margin-bottom:18px;
+        padding-bottom:8px;
+        border-bottom:2px solid rgba(255,255,255,0.6);
+      ">
+        USEFUL LINKS
+      </h3>
+
+      <ul style="list-style:none;padding:0;margin:0;font-size:15px;line-height:2;">
+        <li><a href="/" style="color:#fff;text-decoration:none;">Home</a></li>
+        <li><a href="/privacy-policies.html" style="color:#fff;text-decoration:none;">Privacy Policy</a></li>
+        <li><a href="/terms-and-conditions.html" style="color:#fff;text-decoration:none;">Terms & Conditions</a></li>
+        <li><a href="/cookies.html" style="color:#fff;text-decoration:none;">Cookies</a></li>
+        <li><a href="/about-us.html" style="color:#fff;text-decoration:none;">About Us</a></li>
+        <li><a href="/contact-us.html" style="color:#fff;text-decoration:none;">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- RIGHT DISCLAIMER (WIDE) -->
+    <div style="flex:1;">
+      <h3 style="
+        font-size:22px;
+        margin-bottom:18px;
+        padding-bottom:8px;
+        border-bottom:2px solid rgba(255,255,255,0.6);
+      ">
+        DISCLAIMER
+      </h3>
+
+      <p style="font-size:15px;line-height:1.7;margin-bottom:14px;">
+        <strong>Print Tech Pro</strong> is an independent service provider offering expert
+        printer troubleshooting and technical assistance. We are not affiliated,
+        sponsored, endorsed, or officially connected with any printer manufacturers
+        including but not limited to HP, Brother, Canon, Epson, Lexmark, Samsung, or
+        any other brand.
+      </p>
+
+      <p style="font-size:15px;line-height:1.7;margin-bottom:14px;">
+        All product names, logos, brands, and trademarks mentioned on this website are
+        the property of their respective owners and are used only for identification
+        purposes.
+      </p>
+
+      <p style="font-size:15px;line-height:1.7;margin-bottom:14px;">
+        Our services are provided independently and do not represent or imply any
+        partnership, warranty, or guarantee from any manufacturer.
+      </p>
+
+      <p style="font-size:15px;line-height:1.7;margin-bottom:14px;">
+        No software or drivers are hosted or provided on this site.
+      </p>
+
+      <p style="font-size:15px;line-height:1.7;">
+        For questions, contact us at
+        <a href="mailto:info@printtechpro.com"
+           style="color:#ffffff;font-weight:700;text-decoration:underline;">
+          info@printtechpro.com
+        </a>
+      </p>
+    </div>
+
+  </div>
+
+  <!-- LINE -->
+  <div style="
+    max-width:1200px;
+    margin:auto;
+    border-top:1px solid rgba(255,255,255,0.4);
+  "></div>
+
+  <!-- BOTTOM -->
+  <div style="
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:15px;
+    font-size:14px;
+  ">
+
+    <div>© 2026 Print Tech Pro. All Rights Reserved.</div>
+
+    <div style="display:flex;gap:12px;align-items:center;">
+      <img src="img/sectigo.png" style="height:34px;">
+      <img src="img/google.png" style="height:34px;">
+      <img src="img/site.png" style="height:34px;">
+      <img src="img/payment-1.png" style="height:34px;">
+    </div>
+
+  </div>
+
+  <!-- NOTE -->
+  <div style="
+    text-align:center;
+    font-size:13px;
+    padding:12px 20px 20px;
+    line-height:1.6;
+  ">
+    Note: Print Tech Pro is an independent service provider and is not affiliated with any
+    printer brands like HP, Brother, Canon, or Epson.
+  </div>
+
+</footer>
+
+<!-- GO TO TOP -->
+<button onclick="window.scrollTo({top:0,behavior:'smooth'})"
+  style="
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:46px;
+    height:46px;
+    border:none;
+    border-radius:50%;
+    background:#0d6efd;
+    color:#fff;
+    font-size:20px;
+    cursor:pointer;
+    box-shadow:0 10px 24px rgba(0,0,0,.35);
+  ">
+  ↑
+</button>
+
+<!-- MOBILE FIX -->
+<style>
+@media(max-width:900px){
+  footer > div:first-child{
+    flex-direction:column !important;
+  }
+}
+</style>
+
+
+
+
+<!-- ================= JIVO CHAT FUNCTION ================= -->
+<script>
+function openChat() {
+  if (window.jivo_api && typeof window.jivo_api.open === "function") {
+    jivo_api.open();
+  }
+}
+</script>
+
+
+</body>
+</html>
