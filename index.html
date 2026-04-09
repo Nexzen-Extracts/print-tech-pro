@@ -25,21 +25,182 @@
   </div>
 </header>
 
-<!-- ================= MENU ================= -->
-<!-- <nav class="top-menu">
-  <a >Printer Offline</a>
-  <a href="#">Printer Setup</a>
-  <a href="#">Scanner Setup</a>
-  <a href="#">Support Home</a>
-  <a href="#">Ink Cartridge Issue</a>
-  <a href="#">Diagnostics</a>
-  <a href="#">Business</a>
-</nav> -->
+<!-- HERO SECTION START -->
+<section style="
+  width:100%;
+  background:#ffffff;
+  padding:60px 20px;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+">
 
-<!-- ================= HERO ================= -->
-<section class="hero">
+  <div style="
+    max-width:1200px;
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+    flex-wrap:wrap;
+  ">
+
+    <!-- LEFT CONTENT -->
+    <div style="
+      flex:1 1 420px;
+      min-width:280px;
+    ">
+      <h1 style="
+        font-size:42px;
+        line-height:1.2;
+        margin:0 0 18px 0;
+        color:#0b4ddb;
+        font-weight:800;
+      ">
+        Easy Printer Setup & Troubleshooting
+      </h1>
+
+      <p style="
+        font-size:16px;
+        color:#333;
+        margin:0 0 14px 0;
+        line-height:1.6;
+      ">
+        Start your printer installation in minutes.
+
+      </p>
+
+      <p style="
+        font-size:16px;
+        color:#333;
+        margin:0 0 28px 0;
+        line-height:1.6;
+        max-width:520px;
+      ">
+      Follow the step-by-step 123 hp com setup and installation guide to download drivers, configure Wi-Fi, and bring your printer back online instantly.
+      </p>
+
+      <a href="/find-printer.html" style="
+        display:inline-block;
+        padding:16px 34px;
+        background:#0b4ddb;
+        color:#ffffff;
+        font-size:16px;
+        font-weight:700;
+        text-decoration:none;
+        border-radius:12px;
+        box-shadow:0 12px 32px rgba(11,77,219,0.35);
+        transition:all .25s ease;
+      "
+      onmouseover="this.style.transform='translateY(-3px)'"
+      onmouseout="this.style.transform='translateY(0)'"
+      >
+        Click here for Printer Setup
+
+      </a>
+    </div>
+
+    <!-- RIGHT SLIDER -->
+    <div style="
+      flex:1 1 420px;
+      min-width:280px;
+      position:relative;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    ">
+
+      <!-- LEFT ARROW -->
+      <button onclick="prevSlide()" style="
+        position:absolute;
+        left:-10px;
+        width:44px;
+        height:44px;
+        border-radius:50%;
+        border:none;
+        background:#ffffff;
+        box-shadow:0 6px 20px rgba(0,0,0,0.15);
+        font-size:26px;
+        cursor:pointer;
+        z-index:2;
+      ">‹</button>
+
+      <!-- IMAGE CONTAINER -->
+      <div style="
+        width:100%;
+        max-width:520px;
+        overflow:hidden;
+        border-radius:16px;
+        box-shadow:0 20px 50px rgba(0,0,0,0.18);
+      ">
+        <img id="printerSlider" src="/printer-setup/image/slide-1.png" style="
+          width:100%;
+          display:block;
+          transition:opacity .4s ease;
+        ">
+      </div>
+
+      <!-- RIGHT ARROW -->
+      <button onclick="nextSlide()" style="
+        position:absolute;
+        right:-10px;
+        width:44px;
+        height:44px;
+        border-radius:50%;
+        border:none;
+        background:#ffffff;
+        box-shadow:0 6px 20px rgba(0,0,0,0.15);
+        font-size:26px;
+        cursor:pointer;
+        z-index:2;
+      ">›</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- SLIDER SCRIPT -->
+<script>
+  const images = [
+    "/printer-setup/image/slide-1.png",
+    "/printer-setup/image/slide-2.png"
+  ];
+  let index = 0;
+  const slider = document.getElementById("printerSlider");
+
+  function nextSlide() {
+    index = (index + 1) % images.length;
+    slider.style.opacity = "0";
+    setTimeout(() => {
+      slider.src = images[index];
+      slider.style.opacity = "1";
+    }, 200);
+  }
+
+  function prevSlide() {
+    index = (index - 1 + images.length) % images.length;
+    slider.style.opacity = "0";
+    setTimeout(() => {
+      slider.src = images[index];
+      slider.style.opacity = "1";
+    }, 200);
+  }
+</script>
+
+<!-- RESPONSIVE FIX -->
+<style>
+@media (max-width:768px){
+  section{
+    padding:40px 16px !important;
+  }
+  h1{
+    font-size:32px !important;
+  }
+}
+</style>
+<!-- HERO SECTION END -->
+<!-- <section class="hero">
 <div class="hero-inner">
-<!-- TEXT -->
+
 <div class="hero-text">
 <h1>
         Printer Setup
@@ -58,16 +219,15 @@
 <p style="margin-top:10px; font-size:13px;">
 <strong>Note:</strong> All content on this website is provided for informational and educational purposes only. We do not offer technical support, live assistance, or direct troubleshooting services.
 </p>
-<button onclick="window.location.href='#/find-printer.html'" class="cta-btn">
-        View Setup Guide
+<button onclick="window.location.href='/find-printer.html'" class="cta-btn">
+        Click here for Printer Setup
 </button>
 </div>
-<!-- IMAGE -->
 <div class="hero-image">
 <img src="img/pr-1.png" alt="Printer Guide Illustration">
 </div>
 </div>
-</section>
+</section> -->
 <style>
 *{box-sizing:border-box}
 .header-wrap{
@@ -111,7 +271,7 @@
   font-weight:600;
   font-size:13px;
 }
-/* HERO */
+
 .hero{
   background:linear-gradient(180deg,#eef6ff,#ffffff);
   padding:36px 16px 46px;
@@ -401,6 +561,7 @@
   .issue-card{padding:22px 14px;}
 }
 </style>
+
 
 <!-- ================= SCRIPT ================= -->
 <script>
