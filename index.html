@@ -580,6 +580,771 @@ function openJivoChat(){
   }
 }
 </script>
+<section class="step-section">
+
+  <div class="step-container">
+
+    <h2>Printer Setup – Step by Step 🖨️</h2>
+    <p class="step-subtitle">
+      A complete, well-structured process to install, connect, and start using your printer smoothly.
+    </p>
+
+    <!-- STEPS GRID -->
+    <div class="step-grid">
+
+      <!-- STEP 01 -->
+      <div class="step-card">
+        <span class="step-no">Step 01</span>
+        <h4>Select Your Printer</h4>
+        <p>
+          Identify the correct printer brand and model number to ensure
+          compatible drivers and smooth installation.
+        </p>
+      </div>
+
+      <!-- STEP 02 -->
+      <div class="step-card">
+        <span class="step-no">Step 02</span>
+        <h4>Download Official Drivers</h4>
+        <p>
+          Download the latest printer drivers from the official source
+          for better performance and security.
+        </p>
+      </div>
+
+      <!-- STEP 03 -->
+      <div class="step-card">
+        <span class="step-no">Step 03</span>
+        <h4>Install Printer Software</h4>
+        <p>
+          Run the installer and follow on-screen instructions to properly
+          install all required printer components.
+        </p>
+      </div>
+
+      <!-- STEP 04 -->
+      <div class="step-card">
+        <span class="step-no">Step 04</span>
+        <h4>Connect the Printer</h4>
+        <p>
+          Connect your printer using USB or Wi-Fi and ensure both devices
+          are on the same network.
+        </p>
+      </div>
+
+      <!-- STEP 05 -->
+      <div class="step-card">
+        <span class="step-no">Step 05</span>
+        <h4>Fix Offline & Connection Issues</h4>
+        <p>
+          Resolve printer offline, not detected, or network connectivity
+          issues for uninterrupted printing.
+        </p>
+      </div>
+
+      <!-- STEP 06 -->
+      <div class="step-card">
+        <span class="step-no">Step 06</span>
+        <h4>Update Drivers & Firmware</h4>
+        <p>
+          Keep printer drivers and firmware updated to fix bugs and
+          maintain long-term stability.
+        </p>
+      </div>
+
+      <!-- STEP 07 -->
+      <div class="step-card">
+        <span class="step-no">Step 07</span>
+        <h4>Test Print & Scan</h4>
+        <p>
+          Print a test page and verify scanning functionality to confirm
+          everything works correctly.
+        </p>
+      </div>
+
+      <!-- STEP 08 -->
+      <div class="step-card success">
+        <span class="step-no">Step 08</span>
+        <h4>Printer Ready to Use 🎉</h4>
+        <p>
+          Your printer setup is complete and ready for daily printing
+          without any technical issues.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= STYLES ================= -->
+<style>
+.step-section{
+  background:#f1f5f9;
+  padding:90px 20px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.step-container{
+  max-width:1200px;
+  margin:auto;
+  text-align:center;
+}
+
+.step-container h2{
+  font-size:34px;
+  font-weight:900;
+  color:#0f172a;
+  margin-bottom:10px;
+}
+
+.step-subtitle{
+  color:#475569;
+  margin:0 auto 60px;
+  max-width:760px;
+  font-size:16px;
+  line-height:1.6;
+}
+
+/* GRID */
+.step-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:28px;
+  align-items:stretch; /* 👈 equal height cards */
+}
+
+/* CARD */
+.step-card{
+  background:#ffffff;
+  padding:32px 26px;
+  border-radius:20px;
+  box-shadow:0 18px 36px rgba(0,0,0,.08);
+  text-align:left;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  transition:.3s ease;
+}
+
+.step-card:hover{
+  transform:translateY(-6px);
+}
+
+/* STEP NUMBER */
+.step-no{
+  align-self:flex-start;
+  font-weight:800;
+  color:#2563eb;
+  background:#e0ecff;
+  padding:6px 16px;
+  border-radius:999px;
+  font-size:13px;
+  margin-bottom:14px;
+}
+
+/* TEXT */
+.step-card h4{
+  margin:0 0 10px;
+  font-size:18px;
+  font-weight:800;
+  color:#0f172a;
+}
+
+.step-card p{
+  font-size:15px;
+  color:#475569;
+  line-height:1.65;
+  margin:0;
+}
+
+/* FINAL SUCCESS CARD */
+.step-card.success{
+  background:#16a34a;
+}
+
+.step-card.success h4,
+.step-card.success p{
+  color:#ffffff;
+}
+
+.step-card.success .step-no{
+  background:#dcfce7;
+  color:#166534;
+}
+
+/* RESPONSIVE */
+@media(max-width:1024px){
+  .step-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+@media(max-width:560px){
+  .step-grid{
+    grid-template-columns:1fr;
+  }
+  .step-section{
+    padding:70px 16px;
+  }
+}
+</style>
+
+
+<!-- ================= PRINTER TROUBLESHOOTING & SOLUTIONS ================= -->
+<section style="
+  width:100%;
+  background:#ffffff;
+  font-family:Arial,Helvetica,sans-serif;
+  box-sizing:border-box;
+">
+
+  <!-- HEADER (BLUE ONLY) -->
+  <div style="
+    width:100%;
+    background:#0b67c8;
+    padding:60px 20px 50px;
+    text-align:center;
+    color:#ffffff;
+  ">
+    <h2 style="
+      font-size:clamp(26px,3.5vw,38px);
+      font-weight:900;
+      margin-bottom:12px;
+    ">
+      Printer Troubleshooting & Solutions
+    </h2>
+
+    <p style="
+      font-size:16px;
+      line-height:1.7;
+      max-width:1100px;
+      margin:auto;
+      color:rgba(255,255,255,.95);
+    ">
+      This guide helps you identify common printer problems, understand why they occur,
+      and apply the correct step-by-step solutions to fix them. Follow each section
+      carefully to restore your printer functionality.
+    </p>
+  </div>
+
+  <!-- ISSUES WRAPPER -->
+  <div style="max-width:1200px;margin:auto;">
+
+    <!-- ISSUE ITEM -->
+    <div style="padding:50px 20px;display:flex;gap:60px;flex-wrap:wrap;border-bottom:1px solid #e5e7eb;">
+      <div style="flex:1;min-width:280px;">
+        <span style="font-size:13px;font-weight:800;color:#2563eb;">ISSUE 01</span>
+        <h3 style="font-size:24px;font-weight:900;margin:10px 0;color:#111827;">
+          Printer Shows Offline
+        </h3>
+        <p style="font-size:15px;line-height:1.7;color:#374151;">
+          The printer appears offline due to network interruption, incorrect default
+          printer settings, or power-related issues.
+        </p>
+      </div>
+
+      <div style="flex:1.2;min-width:300px;background:#f9fafb;padding:22px 26px;border-radius:14px;">
+        <h4 style="font-size:18px;font-weight:900;margin-bottom:12px;color:#111827;">
+          Solution Steps
+        </h4>
+        <ol style="font-size:15px;line-height:1.9;padding-left:18px;margin:0;color:#374151;">
+          <li>Ensure the printer is powered ON and connected.</li>
+          <li>Restart printer, router, and computer.</li>
+          <li>Set the printer as default.</li>
+          <li>Clear all pending print jobs.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- ISSUE 02 -->
+    <div style="padding:50px 20px;display:flex;gap:60px;flex-wrap:wrap;border-bottom:1px solid #e5e7eb;">
+      <div style="flex:1;min-width:280px;">
+        <span style="font-size:13px;font-weight:800;color:#16a34a;">ISSUE 02</span>
+        <h3 style="font-size:24px;font-weight:900;margin:10px 0;color:#111827;">
+          Driver Not Available
+        </h3>
+        <p style="font-size:15px;line-height:1.7;color:#374151;">
+          Occurs when the printer driver is outdated, corrupted, or incompatible with
+          the operating system.
+        </p>
+      </div>
+
+      <div style="flex:1.2;min-width:300px;background:#f9fafb;padding:22px 26px;border-radius:14px;">
+        <h4 style="font-size:18px;font-weight:900;margin-bottom:12px;color:#111827;">
+          Solution Steps
+        </h4>
+        <ol style="font-size:15px;line-height:1.9;padding-left:18px;margin:0;color:#374151;">
+          <li>Uninstall the existing printer driver.</li>
+          <li>Restart your system.</li>
+          <li>Download the latest compatible driver.</li>
+          <li>Install and reconnect the printer.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- ISSUE 03 -->
+    <div style="padding:50px 20px;display:flex;gap:60px;flex-wrap:wrap;border-bottom:1px solid #e5e7eb;">
+      <div style="flex:1;min-width:280px;">
+        <span style="font-size:13px;font-weight:800;color:#f97316;">ISSUE 03</span>
+        <h3 style="font-size:24px;font-weight:900;margin:10px 0;color:#111827;">
+          Paper Jam Error
+        </h3>
+        <p style="font-size:15px;line-height:1.7;color:#374151;">
+          Paper jams happen due to incorrect paper alignment, worn rollers, or debris
+          inside the printer.
+        </p>
+      </div>
+
+      <div style="flex:1.2;min-width:300px;background:#f9fafb;padding:22px 26px;border-radius:14px;">
+        <h4 style="font-size:18px;font-weight:900;margin-bottom:12px;color:#111827;">
+          Solution Steps
+        </h4>
+        <ol style="font-size:15px;line-height:1.9;padding-left:18px;margin:0;color:#374151;">
+          <li>Turn off and unplug the printer.</li>
+          <li>Remove jammed paper carefully.</li>
+          <li>Clean rollers gently.</li>
+          <li>Restart and test print.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- ISSUE 04 -->
+    <div style="padding:50px 20px;display:flex;gap:60px;flex-wrap:wrap;border-bottom:1px solid #e5e7eb;">
+      <div style="flex:1;min-width:280px;">
+        <span style="font-size:13px;font-weight:800;color:#dc2626;">ISSUE 04</span>
+        <h3 style="font-size:24px;font-weight:900;margin:10px 0;color:#111827;">
+          Poor Print Quality
+        </h3>
+        <p style="font-size:15px;line-height:1.7;color:#374151;">
+          Poor output is caused by low ink or toner, clogged print heads, or incorrect
+          print settings.
+        </p>
+      </div>
+
+      <div style="flex:1.2;min-width:300px;background:#f9fafb;padding:22px 26px;border-radius:14px;">
+        <h4 style="font-size:18px;font-weight:900;margin-bottom:12px;color:#111827;">
+          Solution Steps
+        </h4>
+        <ol style="font-size:15px;line-height:1.9;padding-left:18px;margin:0;color:#374151;">
+          <li>Check ink or toner levels.</li>
+          <li>Run print head cleaning.</li>
+          <li>Align cartridges properly.</li>
+          <li>Adjust print quality settings.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- ISSUE 05 -->
+    <div style="padding:50px 20px;display:flex;gap:60px;flex-wrap:wrap;">
+      <div style="flex:1;min-width:280px;">
+        <span style="font-size:13px;font-weight:800;color:#7c3aed;">ISSUE 05</span>
+        <h3 style="font-size:24px;font-weight:900;margin:10px 0;color:#111827;">
+          Printer Not Responding
+        </h3>
+        <p style="font-size:15px;line-height:1.7;color:#374151;">
+          This happens when print spooler services stop or the printer connection
+          becomes unstable.
+        </p>
+      </div>
+
+      <div style="flex:1.2;min-width:300px;background:#f9fafb;padding:22px 26px;border-radius:14px;">
+        <h4 style="font-size:18px;font-weight:900;margin-bottom:12px;color:#111827;">
+          Solution Steps
+        </h4>
+        <ol style="font-size:15px;line-height:1.9;padding-left:18px;margin:0;color:#374151;">
+          <li>Restart the print spooler service.</li>
+          <li>Disconnect and reconnect the printer.</li>
+          <li>Update printer firmware.</li>
+          <li>Restart the computer.</li>
+        </ol>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- ================= NEXT STEPS – assistance FLOW ================= -->
+<section style="
+  width:100%;
+  background:#ffffff;
+  padding:70px 0;
+  font-family:Arial,Helvetica,sans-serif;
+  box-sizing:border-box;
+">
+
+  <!-- HEADER -->
+  <div style="width:100%; padding:0 40px 50px;">
+    <h2 style="
+      font-size:clamp(26px,3vw,36px);
+      font-weight:900;
+      color:#0b1724;
+      margin-bottom:12px;
+    ">
+      What Happens If the Issue Is Still Not Fixed?
+    </h2>
+
+    <p style="
+      font-size:16px;
+      line-height:1.8;
+      color:#475569;
+      max-width:1100px;
+    ">
+      Sometimes printer issues require deeper diagnosis. If basic troubleshooting does not resolve the problem, follow the structured assistance path below to ensure fast and accurate resolution.
+    </p>
+  </div>
+
+  <!-- MAIN WRAPPER -->
+  <div style="
+    width:100%;
+    padding:0 40px;
+    display:flex;
+    gap:70px;
+    flex-wrap:wrap;
+    align-items:flex-start;
+  ">
+
+    <!-- LEFT : TIMELINE -->
+    <div style="flex:1.2;min-width:320px;">
+
+      <!-- STEP -->
+      <div style="display:flex;gap:22px;margin-bottom:40px;">
+        <div style="
+          width:46px;
+          height:46px;
+          border-radius:50%;
+          background:#0b67c8;
+          color:#fff;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          font-weight:900;
+        ">
+          01
+        </div>
+
+        <div>
+          <h3 style="font-size:20px;font-weight:900;margin-bottom:6px;color:#0b1724;">
+            Capture the Exact Problem
+          </h3>
+          <p style="font-size:15px;line-height:1.7;color:#475569;">
+            Observe the error message, printer lights, or status shown on your screen. This information helps narrow down the root cause quickly.
+          </p>
+        </div>
+      </div>
+
+      <!-- STEP -->
+      <div style="display:flex;gap:22px;margin-bottom:40px;">
+        <div style="
+          width:46px;
+          height:46px;
+          border-radius:50%;
+          background:#16a34a;
+          color:#fff;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          font-weight:900;
+        ">
+          02
+        </div>
+
+        <div>
+          <h3 style="font-size:20px;font-weight:900;margin-bottom:6px;color:#0b1724;">
+            Confirm Device & System Details
+          </h3>
+          <p style="font-size:15px;line-height:1.7;color:#475569;">
+            Verify your printer model, connection type (USB/Wi-Fi), and operating system version to avoid incompatible fixes.
+          </p>
+        </div>
+      </div>
+
+      <!-- STEP -->
+      <div style="display:flex;gap:22px;margin-bottom:40px;">
+        <div style="
+          width:46px;
+          height:46px;
+          border-radius:50%;
+          background:#f97316;
+          color:#fff;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          font-weight:900;
+        ">
+          03
+        </div>
+
+        <div>
+          <h3 style="font-size:20px;font-weight:900;margin-bottom:6px;color:#0b1724;">
+            Perform Advanced Fixes
+          </h3>
+          <p style="font-size:15px;line-height:1.7;color:#475569;">
+            Advanced actions include firmware updates, print spooler reset, network re-setup, and complete driver reinstallation.
+          </p>
+        </div>
+      </div>
+
+      <!-- STEP -->
+      <div style="display:flex;gap:22px;">
+        <div style="
+          width:46px;
+          height:46px;
+          border-radius:50%;
+          background:#dc2626;
+          color:#fff;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          font-weight:900;
+        ">
+          04
+        </div>
+
+        <div>
+          <h3 style="font-size:20px;font-weight:900;margin-bottom:6px;color:#0b1724;">
+            Get Expert Assistance
+          </h3>
+          <p style="font-size:15px;line-height:1.7;color:#475569;">
+            If the issue still persists, a certified printer expert can remotely diagnose and resolve the problem efficiently.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT : assistance PANEL -->
+    <div style="
+      flex:0.9;
+      min-width:300px;
+      background:linear-gradient(180deg,#0b67c8,#004a9f);
+      color:#ffffff;
+      border-radius:22px;
+      padding:36px;
+      box-shadow:0 20px 45px rgba(11,103,200,.35);
+    ">
+
+      <h3 style="font-size:26px;font-weight:900;margin-bottom:12px;">
+        Talk to a Printer Specialist
+      </h3>
+
+      <p style="
+        font-size:16px;
+        line-height:1.8;
+        color:rgba(255,255,255,.95);
+        margin-bottom:26px;
+      ">
+        Our experienced technicians handle setup issues, driver failures, Wi-Fi problems, and error-code troubleshooting across all major printer brands.
+      </p>
+
+      <ul style="
+        list-style:none;
+        padding:0;
+        margin:0 0 30px;
+        font-size:15px;
+        line-height:1.9;
+      ">
+        <li>✔ Remote troubleshooting assistance</li>
+        <li>✔ All major printer brands</li>
+        <li>✔ Driver & wireless configuration</li>
+        <li>✔ Error-code resolution</li>
+      </ul>
+
+      <a href="javascript:void(0)" onclick="openJivoChat()" style="
+  display:block;
+  background:#ffffff;
+  color:#0b67c8;
+  text-align:center;
+  padding:16px 0;
+  border-radius:14px;
+  font-weight:900;
+  text-decoration:none;
+  font-size:17px;
+  transition:.25s;
+" 
+onmouseover="this.style.transform='translateY(-3px)'"
+onmouseout="this.style.transform='translateY(0)'">
+  Chat with Printer Expert
+</a>
+
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- ================= RESPONSIVE FULL WIDTH FAQ ================= -->
+<section id="faq-split-layout" style="
+  width:100%;
+  background:#0b67c8;
+  padding:60px 20px;
+  font-family:Arial, Helvetica, sans-serif;
+  box-sizing:border-box;
+">
+
+  <!-- HEADER -->
+  <div style="width:100%; text-align:center; margin-bottom:36px;">
+    <h2 style="font-size:40px;font-weight:900;color:#ffffff;margin-bottom:10px;">
+      Frequently Asked Questions
+    </h2>
+    <p style="font-size:15px;color:rgba(255,255,255,.9);max-width:680px;margin:0 auto;line-height:1.6;">
+      Click on a question below to view a step-by-step explanation and helpful tips.
+    </p>
+  </div>
+
+  <!-- MAIN WRAPPER -->
+  <div id="faq-wrapper" style="
+    width:100%;
+    display:flex;
+    gap:32px;
+    align-items:stretch;
+  ">
+
+    <!-- LEFT QUESTIONS -->
+    <div id="faq-left" style="
+      flex:1;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    ">
+      <button class="faq-q-btn active" onclick="faqSelect(0)">How can I book a printer service?</button>
+      <button class="faq-q-btn" onclick="faqSelect(1)">Why is my printer showing offline?</button>
+      <button class="faq-q-btn" onclick="faqSelect(2)">How do I fix paper jam issues?</button>
+      <button class="faq-q-btn" onclick="faqSelect(3)">How do I connect my printer to Wi-Fi?</button>
+      <button class="faq-q-btn" onclick="faqSelect(4)">Why are my prints coming out faded?</button>
+    </div>
+
+    <!-- RIGHT ANSWER -->
+    <div id="faq-answer-box" style="
+      flex:1;
+      background:#ffffff;
+      border-radius:22px;
+      padding:30px 32px;
+      box-shadow:0 20px 45px rgba(0,0,0,.25);
+    ">
+      <h3 id="faq-title" style="font-size:26px;font-weight:900;color:#0b1724;margin-bottom:10px;"></h3>
+      <p id="faq-desc" style="font-size:15px;color:#475569;line-height:1.6;margin-bottom:14px;"></p>
+
+      <h4 style="font-size:17px;font-weight:800;color:#0b1724;margin-bottom:6px;">
+        Step-by-Step
+      </h4>
+
+      <ol id="faq-steps" style="
+        font-size:14.5px;
+        line-height:1.7;
+        color:#1f2937;
+        padding-left:18px;
+        margin-bottom:14px;
+      "></ol>
+
+      <div id="faq-tips" style="
+        background:#f1f5f9;
+        border-left:4px solid #0b67c8;
+        padding:12px 14px;
+        border-radius:10px;
+        font-size:13.5px;
+        color:#334155;
+      "></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= STYLES ================= -->
+<style>
+#faq-split-layout .faq-q-btn{
+  width:100%;
+  padding:15px 18px;
+  font-size:15.5px;
+  font-weight:700;
+  border-radius:14px;
+  border:2px solid rgba(255,255,255,.25);
+  background:transparent;
+  color:#ffffff;
+  cursor:pointer;
+  text-align:left;
+  transition:.25s;
+}
+#faq-split-layout .faq-q-btn:hover{background:rgba(255,255,255,.12);}
+#faq-split-layout .faq-q-btn.active{
+  background:#ffffff;
+  color:#0b67c8;
+  border-color:#ffffff;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  #faq-wrapper{flex-direction:column;}
+}
+</style>
+
+<!-- ================= SCRIPT ================= -->
+<script>
+const faqDataSplit = [
+  {
+    title:"How can I book a printer service?",
+    desc:"You can request printer service online or via live assistance.",
+    steps:["Open assistance page","Submit service request","Share printer details"],
+    tip:"Keep printer model number ready."
+  },
+  {
+    title:"Why is my printer showing offline?",
+    desc:"Printer goes offline due to network or connection issues.",
+    steps:["Check printer power","Verify Wi-Fi/USB","Restart printer"],
+    tip:"Restart router if required."
+  },
+  {
+    title:"How do I fix paper jam issues?",
+    desc:"Paper jams occur due to misaligned paper or debris.",
+    steps:["Turn off printer","Remove jammed paper","Reload paper"],
+    tip:"Do not pull paper forcefully."
+  },
+  {
+    /* SHORT CONTENT */
+    title:"How do I connect my printer to Wi-Fi?",
+    desc:"Wireless setup enables cable-free printing.",
+    steps:["Open Wi-Fi setup","Select network","Enter password"],
+    tip:"Place printer near router."
+  },
+  {
+    /* SHORT CONTENT */
+    title:"Why are my prints coming out faded?",
+    desc:"Faded prints are caused by ink or print head issues.",
+    steps:["Check ink","Clean print head","Align cartridges"],
+    tip:"Use genuine ink."
+  }
+];
+
+function faqSelect(index){
+  const btns=document.querySelectorAll(".faq-q-btn");
+  btns.forEach(b=>b.classList.remove("active"));
+  btns[index].classList.add("active");
+
+  document.getElementById("faq-title").innerText=faqDataSplit[index].title;
+  document.getElementById("faq-desc").innerText=faqDataSplit[index].desc;
+
+  const steps=document.getElementById("faq-steps");
+  steps.innerHTML="";
+  faqDataSplit[index].steps.forEach(s=>{
+    const li=document.createElement("li");
+    li.innerText=s;
+    steps.appendChild(li);
+  });
+
+  document.getElementById("faq-tips").innerHTML="<strong>Tip:</strong> "+faqDataSplit[index].tip;
+}
+
+/* DEFAULT LOAD */
+faqSelect(0);
+</script>
+
+
 
 
 <!-- ================= FOOTER NOTE ================= -->
